@@ -167,7 +167,7 @@ div.it_text{
 .normalText{
 	/*font-weight: bold ;*/
 	color: #333;
-	font-family: Tahoma ;
+	/*font-family: Tahoma ;*/
 	font-size: 110% ;
 	letter-spacing: 1px ;
 }
@@ -193,7 +193,7 @@ div.tab_title{
 	z-index: 1;*/
 }
 div.tab_content{
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	padding: 20px 10px ;
 	color: #333;
 	line-height: 23px ;
