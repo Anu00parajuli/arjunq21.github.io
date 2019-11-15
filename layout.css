@@ -1,30 +1,54 @@
 body{
   margin: 0px ;
   padding: 0px;
-  font-family: Tahoma ;
+  font-family: Montserrat, Tahoma ;
   background: #F1F3F4 ;
 }
+.mv10{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.mv5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.mv15{
+	margin-top: 15px;
+	margin-bottom: 15px;	
+}
+.mv25{
+	margin-top: 25px;
+	margin-bottom: 25px;	
+}
 div.cont{
-  display: block;
-  margin: auto ;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px ;
-  width: calc(100% - 40px) ;
-  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
-  min-height: 100vh ;
-  background: white ;
+	display: block;
+	margin: auto ;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px ;
+	/*width: calc(100% - 40px) ;*/
+	min-height: 100vh ;
+	padding: 0px 20px;
+	width: 100%;
+	max-width: 1350px ;
+	box-sizing: border-box;
 }
 div.gridCont{
-	/*background: powderblue ;*/
 	padding: 0px  ;
+	margin: 20px 0px;
 	display: grid ;
 	grid-template-columns: 300px auto;
 	/*grid-template-areas: "top top" "left right" "bottom bottom" ;*/
 	grid-template-areas: "left right" "bottom bottom" ;
-	grid-gap: 10px ;
+	grid-column-gap: 30px ;
+	width: 100% ;
 }
 div.gridCont>div{
+	max-width: 100% ;
+	background: white ;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+	/*overflow: hidden;*/
 	/*border: 1px solid blue ;*/
 }
 div.gridTop{
@@ -32,7 +56,7 @@ div.gridTop{
 }
 div.gridLeft{
 	grid-area: left;
-	border-right: 1px solid #ccc !important;
+	/*border-right: 1px solid #ccc;*/
 }
 div.gridRight{
 	grid-area: right;
@@ -52,22 +76,26 @@ div.info{
 div.profileImage{
 	width: 90%;
 	margin: auto;
+	max-width: 300px ;
+	/*border: 1px solid red;*/
 
 }
 div.profileImage img{
 	width: 100% ;
 	border-radius: 50% ;
-	border: 1px solid rgba(125, 125, 125, 0.7);
-	padding: 5px;
-	margin-left: -8px;
+	/*border: 1px solid rgba(125, 125, 125, 0.7);*/
+	box-shadow: 1px 3px 9px 2px rgba(125, 125, 125, 0.5) ;
+	/*padding: 1px;*/
+	/*margin-left: -8px;*/
+	display: block;
 }
 div.buttons{
-	background: rgba(0,0,0,0.1) ;
+	background: rgba(0,0,0,0.08) ;
 	background: #F1F3F4 ;
-	padding: 10px;
+	padding: 10px 0px;
 	text-align: left ;
 }
-div.buttons a{
+/*div.buttons a{
 	text-decoration: none ;
 	padding: 8px 15px ;
 	display: inline-block;
@@ -91,6 +119,50 @@ div.buttons a:hover{
 div.buttons a:active{
 	background: #333 ;
 	border-left:2px solid #777; ;
+}*/
+/*div.buttons>div{
+	background: white ;
+	box-shadow: 0px 0px 3px 1px #bbb ;
+	word-break: break-word ;
+}*/
+div.icon_texts{
+	/*font-size: 110% ;*/
+	word-break: break-word ;
+	/*color: #333 ;*/
+}
+div.icon_texts a, .links{
+	font-size: 90%;
+	font-weight: bold ;
+	color: #555 ;
+	text-decoration: none;
+	letter-spacing: 1px ;	
+}
+/*.links*/
+div.icon_texts a{
+	display: grid ;
+	grid-template-columns: 35px auto ;
+	grid-gap: 15px;
+	/*margin-bottom: 2px;*/
+	padding: 10px 0px;
+	/*background: rgba(0,0,0,0.08) ;*/
+	/*border: 1px solid rgba(0,0,0,0.08);*/
+	border: 1px solid rgba(1, 1, 1, 0);
+	border-right: 0px ;
+	border-left: 0px;	
+	/*box-sizing: border-box;*/
+}
+div.icon_texts a:hover, .links:hover{
+	/*text-decoration: underline;*/
+	/*background: rgba(0, 0, 0, 0.05) ;*/
+	background: white;
+	/*color: white;*/
+	border: 1px solid #ccc;
+	border-right: 0px ;
+	border-left: 0px;
+}
+div.it_text{
+	display: flex ;
+	align-items: center ;
 }
 .normalText{
 	/*font-weight: bold ;*/
@@ -106,13 +178,13 @@ div.tab{
 	border-radius: 40px;
 }
 div.tab_title{
-	font-weight: bold ;
+	/*font-weight: bold ;*/
 	padding: 12px 40px;
 	font-size: 190% ;
-	letter-spacing: 3px ;
+	letter-spacing: 2px ;
 	color: #555 ;
 	/*font-style: italic;*/
-	background: rgba(0,0,0,0.1);
+	/*background: rgba(0,0,0,0.1);*/
 	/*background: #D8DADB ;*/
 	/*background: #F1F3F4 ;*/
 	border-bottom: 1px solid rgba(0,0,0,0.09);
@@ -127,32 +199,6 @@ div.tab_content{
 	line-height: 23px ;
 	/*background: rgba(0,0,0,0.03);*/
 
-}
-div.icon_texts{
-	font-size: 110% ;
-	/*color: #333 ;*/
-}
-div.icon_texts a, .links{
-	font-family: Tahoma ;
-	color: #555 ;
-	text-decoration: none;
-	letter-spacing: 1px ;	
-}
-/*.links*/
-div.icon_texts a{
-	/*font-weight: bold ;*/
-	/*width: auto ; */
-	display: grid ;
-	grid-template-columns: 35px auto ;
-	/*grid-gap: 20px ;*/
-	/*grid-template-rows: 40px ;*/
-	grid-gap: 15px;
-	margin-bottom: 6px;
-	padding: 10px 0px;
-}
-div.icon_texts a:hover, .links:hover{
-	text-decoration: underline;
-	background: rgba(200, 200, 200, 0.4) ;
 }
 .links{
 	font-weight: bold ;
