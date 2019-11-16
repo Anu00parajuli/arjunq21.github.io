@@ -1,17 +1,21 @@
 @media(max-width: 770px){
 	div.cont{
-		padding: 0px 10px;
+		padding: 0px 7px;
 	}
 	div.gridCont{
 		display: grid ;
 		grid-template-columns: auto;
 		/*grid-template-areas: "top top" "left right" "bottom bottom" ;*/
 		grid-template-areas: "left left" "right right" "bottom bottom" ;
-		grid-gap: 10px ;
+		grid-gap: 20px ;
+		margin: 0px 0px;
 	}
-/*	div.buttons{
-		display: none ;
-	}*/
+	div.gridCont>div{
+		border-radius: 20px;
+	}
+	div#gridLeft{
+		border-radius: 0px 0px 20px 20px;
+	}
 	div.skill{
 		width: 100% ;
 		grid-template-columns: 100px auto 40px ;

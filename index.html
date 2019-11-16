@@ -5,23 +5,25 @@
   <title>Arjun Adhikari | Profile</title>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width'>
+  <meta name='theme-color' content="#eee">
   <link rel="stylesheet" type="text/css" href="layout.css">
   <link rel="stylesheet" type="text/css" href="media.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="components.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="cont">
   <div class="gridCont">
-    <div class="gridLeft">
-      <h4 class='head-text' style='margin-bottom: 5px;'> Hi there, I am</h4>
+    <div class="gridLeft" id='gridLeft'>
+      <h4 class='head-text' style='margin-bottom: 0px; color: #999; font-weight: normal;'> Hi there, I am</h4>
           <div class="info head-text">
-              <h2 style='letter-spacing: 1px; padding-top: 10px;margin-top: 0px;'>Arjun Adhikari.</h2>
+              <h2 style='letter-spacing: 1px; padding-top: 0px;margin-top: 5px;'>Arjun Adhikari.</h2>
               <div class="profileImage">
-                <img src="profile-285x285.jpg">
+                <img src="profile-300x300.jpg">
               </div>
-              <h4 style='letter-spacing: 1px; font-style: italic; color: #555 ;'>A Web Developer.</h4>
+              <h4 style='letter-spacing: 1px; font-style: italic; color: #555 ; margin: 25px 0px;'>I make Websites.</h4>
               <div class="buttons">
         
                                   <div class="icon_texts">
@@ -38,7 +40,7 @@
                                   <div class="icon_texts">
                     <a href="tel:009779866008814">
                       <div class="it_icon">
-                        <i class="fa fa-phone"  style='color: #777;' ></i>
+                        <i class="fa fa-phone"  style='color: seagreen;' ></i>
                       </div>
                       <div class="it_text">
                         <span>
@@ -60,7 +62,7 @@
                                   <div class="icon_texts">
                     <a href="https://github.com/arjunq21">
                       <div class="it_icon">
-                        <i class="fa fa-github"  ></i>
+                        <i class="fa fa-github"  style='color: #000;' ></i>
                       </div>
                       <div class="it_text">
                         <span>
@@ -73,208 +75,94 @@
           </div>
     </div>
     <div class="gridRight">
-      <div class="otherInfo">
-
-
-        <div id="about" class='tab'>
-          <div class="tab_title">
-            About Me 
-          </div>
-          <div class="tab_content">
-             <ul class="normalText" style='line-height: 30px ;'>
-              <li>I live in Hemja, Pokhara - 25.</li>
-              <li>I like programming.</li>
-              <li>I make websites.</li>
-            </ul>
-          </div>
+      <div class="rightItems">
+        <div class="tab_title">
+          <span class="titleText">
+            I make websites with
+          </span>
         </div>
-
-
-        <div id="projects" class="tab">
-          <div class="tab_title">
-            Projects
-          </div>
-          <div class="tab_content">
-            <p class="normalText mv25">
-              1. Full Stack Web development of natedar.com in PHP, MySQL, CSS3 and jQuery.
-            </p>
-              <p class="normalText mv25">
-                2. UI design and development of <a href="https://gravitytransformation.com/macro-calculator/" class="links" target = "_blank">Macros Calculator</a> with jQuery, CSS3 and JavaScript.
-              </p>
-            <p class="normalText mv25">
-              3. Development of <a href="https://arjunq21.github.io/MultiSelect.js" target = "_blank" class = 'links'>MultiSelect.js</a> plugin that helps in selecting multiple items from a list.
-            </p>
-          </div>
-        </div>        
- 
-
-        <div id="skills" class='tab'>
-          <div class="tab_title">
-            Skills
-          </div>
-          <div class="tab_content">
-            <p class="normalText">My web development related skills: </p>
-            <div class="skill">
-              <div class="skill_name">
-                PHP
+     
+        <div class="tools">
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/html.png" alt="HTML 5's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '80' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">80%</div>
+              <div class="t_name">
+                HTML 5              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                MySQL
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/css.png" alt="CSS 3's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '60' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">60%</div>
+              <div class="t_name">
+                CSS 3              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                HTML5
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/php.png" alt="PHP 7's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '65'  >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">65%</div>
+              <div class="t_name">
+                PHP 7              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                CSS3
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/laravel.png" alt="Laravel's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '75' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">75%</div>
+              <div class="t_name">
+                Laravel              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                JavaScript
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/js.png" alt="JavaScript's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '65' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">65%</div>
+              <div class="t_name">
+                JavaScript              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                jQuery
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/mysql.png" alt="MySQL's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '85' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">85%</div>
+              <div class="t_name">
+                MySQL              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                Bootstrap 4
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/bootstrap.png" alt="Bootstrap's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '60' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">60%</div>
+              <div class="t_name">
+                Bootstrap              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                Laravel
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/jquery.png" alt="jQuery's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '65' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">65%</div>
+              <div class="t_name">
+                jQuery              </div>
             </div>
-            <div class="skill">
-              <div class="skill_name">
-                PhotoShop
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/vue.png" alt="Vue Js's Logo">
               </div>
-              <div class="skill_percentage" >
-                <div class="p_full">
-                  <div class="p_part" data-percent = '50' >
-                  </div>
-                </div>
-              </div>
-              <div class="percent_text">50%</div>
+              <div class="t_name">
+                Vue Js              </div>
             </div>
-          </div>
-        </div> 
-
-        
-<!--         <div id="contact" class='tab'>
-          <div class="tab_title">
-            Contact 
-          </div>
-          <div class="tab_content">
-            <p class="normalText">If you want to contact me, here are some links.</p>
-              <div class="icon_texts">
-                <a href="https://www.facebook.com/arjunq21">
-                  <div class="it_icon">
-                    <i class="fa fa-facebook-f" style='color: #4368B1;'></i>
-                  </div>
-                  <div class="it_text">
-                    facebook.com/arjunq21
-                  </div>
-                </a>
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/photoshop.png" alt="PhotoShop's Logo">
               </div>
-              <div class="icon_texts">
-                <a href="mailto:arjunadhikari789@gmail.com">
-                  <div class="it_icon">
-                    <i class="fa fa-envelope" style='color: #B83426;'></i>
-                  </div>
-                  <div class="it_text">
-                    arjunadhikari789@gmail.com
-                  </div>
-                </a>
-              </div>      
-              <div class="icon_texts">
-                <a href="https://github.com/arjunQ21">
-                  <div class="it_icon">
-                    <i class="fa fa-github"></i>
-                  </div>
-                  <div class="it_text">
-                    github.com/arjunQ21
-                  </div>
-                </a>
-              </div>   
-              <hr>
-              <p class="normalText" style = 'background: rgba(200, 200, 200, 0.6) ; padding: 10px;'>
-                If you have some Web Development OR Design projects, please contact me. I would be happy to be a part of it.
-              </p>   
-              <p class="normalText">
-                Have a nice day.
-              </p>                 
-          </div>
-        </div>  -->
-
-
-      </div>
-    </div>
+              <div class="t_name">
+                PhotoShop              </div>
+            </div>
+                      <div class="tool">
+              <div class="t_img">
+                <img src="images/150x150/indesign.png" alt="InDesign's Logo">
+              </div>
+              <div class="t_name">
+                InDesign              </div>
+            </div>
+                  </div>     
+      </div><!-- right items -->
+    </div><!-- grid right -->
   </div>
 </div>
 <script src='layout.js'></script>

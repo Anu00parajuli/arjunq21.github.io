@@ -1,75 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Arjun Adhikari | Profile</title>
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width'>
-  <link rel="stylesheet" type="text/css" href="layout.css">
-  <link rel="stylesheet" type="text/css" href="media.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-<body>
-
-<div class="cont">
-  <div class="gridCont">
-    <div class="gridLeft">
-      <h4 class='head-text' style='margin-bottom: 5px;'> Hi there, I am</h4>
-          <div class="info head-text">
-              <h2 style='letter-spacing: 1px; padding-top: 10px;margin-top: 0px;'>Arjun Adhikari.</h2>
-              <div class="profileImage">
-                <img src="profile-285x285.jpg">
-              </div>
-              <h4 style='letter-spacing: 1px; font-style: italic; color: #555 ;'>A Web Developer.</h4>
-              <div class="buttons">
-<?php 
-  $contacts = [
-    [ 'text'=> 'facebook.com/arjunq21', 
-      'icon'=>'fa fa-facebook-f', 
-      'color'=>'#4368B1', 
-      'href'=>'https://www.facebook.com/arjunq21'
-    ],
-    [ 'text'=> '977 9866008814', 
-      'icon'=>'fa fa-phone', 
-      'color'=>'#777', 
-      'href'=>'tel:009779866008814'
-    ],
-    [ 'text'=> 'arjunadhikari789@gmail.com', 
-      'icon'=>'fa fa-envelope-open-o', 
-      'color'=>'#B83426', 
-      'href'=>'mailto:arjunadhikari789@gmail.com'
-    ],
-    [ 'text'=> 'github.com/arjunQ21', 
-      'icon'=>'fa fa-github', 
-      'color'=>'', 
-      'href'=>'https://github.com/arjunq21'
-    ],
-  ];
-?>        
-                <?php foreach($contacts as $contact){ ?>
-                  <div class="icon_texts">
-                    <a href="<?= $contact['href'] ?>">
-                      <div class="it_icon">
-                        <i class="<?= $contact['icon'] ?>" <?php if($contact['color']) echo " style='color: ". $contact['color']. ";'" ?> ></i>
-                      </div>
-                      <div class="it_text">
-                        <span>
-                          <?= $contact['text'] ?>
-                        </span>  
-                      </div>
-                    </a>
-                  </div>
-                <?php } ?>                               
-              </div>
-          </div>
-    </div>
-    <div class="gridRight">
       <div class="otherInfo">
 
 
-        <div id="about" class='tab'>
+<!--         <div id="about" class='tab'>
           <div class="tab_title">
-            About Me 
+            <span class="titleText">About Me</span>
           </div>
           <div class="tab_content">
              <ul class="normalText" style='line-height: 30px ;'>
@@ -78,12 +12,12 @@
               <li>I make websites.</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
 
-        <div id="projects" class="tab">
+<!--         <div id="projects" class="tab">
           <div class="tab_title">
-            Projects
+            <span class="titleText">Projects</span>
           </div>
           <div class="tab_content">
             <p class="normalText mv25">
@@ -96,12 +30,12 @@
               3. Development of <a href="https://arjunq21.github.io/MultiSelect.js" target = "_blank" class = 'links'>MultiSelect.js</a> plugin that helps in selecting multiple items from a list.
             </p>
           </div>
-        </div>        
+        </div>  -->       
  
 
-        <div id="skills" class='tab'>
+<!--         <div id="skills" class='tab'>
           <div class="tab_title">
-            Skills
+            <span class="titleText">Skills</span>
           </div>
           <div class="tab_content">
             <p class="normalText">My web development related skills: </p>
@@ -214,7 +148,7 @@
               <div class="percent_text">50%</div>
             </div>
           </div>
-        </div> 
+        </div>  -->
 
         
 <!--         <div id="contact" class='tab'>
@@ -265,9 +199,3 @@
 
 
       </div>
-    </div>
-  </div>
-</div>
-<script src='layout.js'></script>
-</body>
-</html>

@@ -1,0 +1,91 @@
+.titleText{
+	font-size: 20px;
+	font-family:Montserrat, Ubuntu, 'Source Sans Pro' ;
+	font-weight: bold ;
+	letter-spacing: 1px;
+	color: #555 ;
+	padding: 8px;	
+	display: block;
+}
+div.tab_title{
+	/*padding: 12px;*/
+	/*border-bottom: 1px solid rgba(0,0,0,0.09);*/
+}
+.head-text{
+	text-align: center ;
+	color: #333;
+}
+.normalText{
+	/*font-weight: bold ;*/
+	color: #333;
+	/*font-family: Tahoma ;*/
+	font-size: 110% ;
+	letter-spacing: 1px ;
+}
+.links{
+	font-weight: bold ;
+}
+div.icon_texts{
+	/*font-size: 110% ;*/
+	word-break: break-word ;
+	/*color: #333 ;*/
+}
+div.icon_texts a, .links{
+	font-size: 90%;
+	font-weight: bold ;
+	color: #555 ;
+	text-decoration: none;
+	letter-spacing: 1px ;	
+}
+/*.links*/
+div.icon_texts a{
+	display: grid ;
+	grid-template-columns: 35px auto ;
+	grid-gap: 15px;
+	/*margin-bottom: 2px;*/
+	padding: 10px 0px;
+	/*background: rgba(0,0,0,0.08) ;*/
+	/*border: 1px solid rgba(0,0,0,0.08);*/
+	border: 1px solid rgba(1, 1, 1, 0);
+	border-right: 0px ;
+	border-left: 0px;	
+	/*box-sizing: border-box;*/
+}
+div.icon_texts a:hover, .links:hover{
+	background: white;
+	border: 1px solid #ccc;
+	border-right: 0px ;
+	border-left: 0px;
+}
+div.icon_texts a:active{
+	background: white;
+	border: 1px solid #ccc;
+	border-right: 0px ;
+	border-left: 0px;
+}
+div.it_text{
+	display: flex ;
+	align-items: center ;
+}
+div.it_icon{
+	text-align: right !important;
+}
+div.it_icon i{
+	font-size: 25px !important;
+}
+.mv10{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.mv5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.mv15{
+	margin-top: 15px;
+	margin-bottom: 15px;	
+}
+.mv25{
+	margin-top: 25px;
+	margin-bottom: 25px;	
+}
