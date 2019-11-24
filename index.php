@@ -7,11 +7,16 @@
   <meta name='theme-color' content="#E6F0FF">
   <link rel="stylesheet" type="text/css" href="layout.css">
   <link rel="stylesheet" type="text/css" href="components.css">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <link rel="stylesheet" type="text/css" href="toast.css">
   <link rel="stylesheet" type="text/css" href="media.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script type="text/javascript" src='popup.js'></script>
+  <script type="text/javascript" src='toast.js'></script>
 </head>
 <body>
+
 
 <div class="cont">
   <div class="gridCont">
@@ -29,28 +34,37 @@
     [ 'text'=> 'facebook.com/arjunq21', 
       'icon'=>'fa fa-facebook-f', 
       'color'=>'#4368B1', 
-      'href'=>'https://www.facebook.com/arjunq21'
+      'href'=>'https://www.facebook.com/arjunq21',
+      'newWindow'=>1,
     ],
     [ 'text'=> 'arjunadhikari789@gmail.com', 
       'icon'=>'fa fa-envelope-open-o', 
       'color'=>'#B83426', 
-      'href'=>'mailto:arjunadhikari789@gmail.com'
+      'href'=>'mailto:arjunadhikari789@gmail.com',
+      'id' => 'mailButton',
+      'newWindow'=>1,
     ],
     [ 'text'=> 'github.com/arjunQ21', 
       'icon'=>'fa fa-github', 
       'color'=>'#000', 
-      'href'=>'https://github.com/arjunq21'
+      'href'=>'https://github.com/arjunq21',
+      'newWindow'=>1,
     ],
     [ 'text'=> '977 9866008814', 
       'icon'=>'fa fa-phone', 
       'color'=>'seagreen', 
-      'href'=>'tel:009779866008814'
+      'href'=>'tel:009779866008814',
+      'id'=>'callButton',
+      'newWindow'=>0,
     ],
   ];
 ?>        
                 <?php foreach($contacts as $contact){ ?>
                   <div class="icon_texts">
-                    <a href="<?= $contact['href'] ?>">
+                    <a href="<?= $contact['href'] ?>"  
+                        <?php if(isset($contact['id'])) echo " id = '".$contact['id']."' " ?>
+                        <?php if($contact['newWindow'] == 1) echo " target = '_blank' " ?>
+                        >
                       <div class="it_icon">
                         <i class="<?= $contact['icon'] ?>" <?php if($contact['color']) echo " style='color: ". $contact['color']. ";'" ?> ></i>
                       </div>
@@ -129,6 +143,26 @@
     </div><!-- grid right -->
   </div>
 </div>
-<script src='layout.js'></script>
+<div id="toast">
+  <span>Sample Toast</span>
+</div>
+
+<div id="popup_cont">
+  <div id="popup">
+    <div class="p_title">
+      <div class="p_title_text">
+        <span>Popup Title  like this</span>
+      </div>
+      <div class="p_close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="p_body">
+      body of this
+    </div>
+  </div>
+</div>
+<input type="text" name="clipboard" id='clipboardInput'>
+<script src='script.js'></script>
 </body>
 </html>

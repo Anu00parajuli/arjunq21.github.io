@@ -1,0 +1,22 @@
+div#toast{
+	z-index: 3 ;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	/*border: 1px solid red;*/
+	width: calc(100% - 40px);
+	display: flex ;
+	/* For not showing at first */
+	display: none ;
+	align-items: center ;
+	justify-content: center;
+	word-break: break-all;
+
+}
+div#toast span{
+	background: #374d6d ;
+	color: white;
+	text-align: center; 
+	padding: 10px 15px;
+	border-radius: 20px;
+}

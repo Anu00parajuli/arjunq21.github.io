@@ -10,17 +10,15 @@ div.cont{
 	margin: auto ;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 0px ;
-	/*width: calc(100% - 40px) ;*/
 	min-height: 100vh ;
-	padding: 0px 20px;
+	padding:20px;
 	width: 100%;
 	max-width: 1350px ;
 	box-sizing: border-box;
 }
 div.gridCont{
 	padding: 0px  ;
-	margin: 20px 0px;
+	margin: 0px;
 	display: grid ;
 	grid-template-columns: 300px auto;
 	/*grid-template-areas: "top top" "left right" "bottom bottom" ;*/
@@ -132,4 +130,7 @@ div.t_name{
 	/*margin-top: 5px;*/
 	padding-top: 5px;
 	border-top: 1px solid #ddd;
+}
+input#clipboardInput{
+	display: none ;
 }
