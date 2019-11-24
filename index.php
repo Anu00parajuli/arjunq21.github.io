@@ -4,10 +4,10 @@
   <title>Arjun Adhikari | Profile</title>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width'>
-  <meta name='theme-color' content="#eee">
+  <meta name='theme-color' content="#E6F0FF">
   <link rel="stylesheet" type="text/css" href="layout.css">
-  <link rel="stylesheet" type="text/css" href="media.css">
   <link rel="stylesheet" type="text/css" href="components.css">
+  <link rel="stylesheet" type="text/css" href="media.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -31,11 +31,6 @@
       'color'=>'#4368B1', 
       'href'=>'https://www.facebook.com/arjunq21'
     ],
-    [ 'text'=> '977 9866008814', 
-      'icon'=>'fa fa-phone', 
-      'color'=>'seagreen', 
-      'href'=>'tel:009779866008814'
-    ],
     [ 'text'=> 'arjunadhikari789@gmail.com', 
       'icon'=>'fa fa-envelope-open-o', 
       'color'=>'#B83426', 
@@ -45,6 +40,11 @@
       'icon'=>'fa fa-github', 
       'color'=>'#000', 
       'href'=>'https://github.com/arjunq21'
+    ],
+    [ 'text'=> '977 9866008814', 
+      'icon'=>'fa fa-phone', 
+      'color'=>'seagreen', 
+      'href'=>'tel:009779866008814'
     ],
   ];
 ?>        
@@ -63,32 +63,40 @@
                   </div>
                 <?php } ?>                               
               </div>
+           <!--    <div id="click_and_hold">
+                <span>click and hold links</span>
+              </div> -->
           </div>
     </div>
     <div class="gridRight">
       <div class="rightItems">
-        <div class="tab_title">
+        <!-- <div class="tab_title"> -->
           <span class="titleText">
             I make websites with
           </span>
-        </div>
+        <!-- </div> -->
   <?php 
+  $size = "150x150" ;
   $tools = [
-    tool("HTML 5", "images/150x150/html.png"),
-    tool("CSS 3", "images/150x150/css.png"),
-    tool("PHP 7", "images/150x150/php.png"),
-    tool("Laravel", "images/150x150/laravel.png"),
-    tool("JavaScript", "images/150x150/js.png"),
-    tool("MySQL", "images/150x150/mysql.png"),
-    tool("Bootstrap", "images/150x150/bootstrap.png"), 
-    tool("jQuery", "images/150x150/jquery.png"),
-    tool("Vue Js", "images/150x150/vue.png"),
-    tool("PhotoShop", "images/150x150/photoshop.png"),
-    tool("InDesign", "images/150x150/indesign.png"), 
+    tool("HTML 5", "images/$size/html.png"),
+    tool("CSS 3", "images/$size/css.png"),
+    tool("PHP 7", "images/$size/php.png"),
+    tool("Laravel", "images/$size/laravel.png"),
+    tool("JavaScript", "images/$size/js.png"),
+    tool("MySQL", "images/$size/mysql.png"),
+    tool("Bootstrap", "images/$size/bootstrap.png"), 
+    tool("jQuery", "images/$size/jquery.png"),
+    tool("Vue Js", "images/$size/vue.png"),
+    tool("WordPress", "images/$size/wordpress.png"),
   ];
   function tool($name, $image){
     return ['name'=>$name, 'image'=>$image] ;
   }
+  $otherTools = [
+    tool("PhotoShop", "images/$size/photoshop.png"),
+    tool("Github", "images/$size/github.png"), 
+    tool("Adobe XD", "images/$size/indesign.png"),
+  ];
   ?>   
         <div class="tools">
           <?php foreach($tools as $tool){ ?>
@@ -101,7 +109,22 @@
               </div>
             </div>
           <?php } ?>
-        </div>     
+        </div> 
+        <span class="titleText">
+          Some other tools I use
+        </span> 
+        <div class="tools">
+          <?php foreach($otherTools as $tool){ ?>
+            <div class="tool">
+              <div class="t_img">
+                <img src="<?= $tool['image'] ?>" alt="<?= $tool['name']."'s Logo" ?>">
+              </div>
+              <div class="t_name">
+                <?= $tool['name'] ?>
+              </div>
+            </div>
+          <?php } ?>
+        </div>           
       </div><!-- right items -->
     </div><!-- grid right -->
   </div>

@@ -3,6 +3,7 @@ body{
   padding: 0px;
   font-family: Montserrat, Tahoma ;
   background: #F1F3F4 ;
+  background: rgb(230, 240, 255) ;
 }
 div.cont{
 	display: block;
@@ -72,12 +73,33 @@ div.profileImage img{
 	display: block;
 }
 div.buttons{
-	background: rgba(0,0,0,0.08) ;
-	background: #F1F3F4 ;
-	padding: 10px 0px;
+	background: rgb(192, 218, 255) ;
+	padding: 0px 0px;
 	text-align: left ;
 	margin-bottom: 20px;
+/*	border: 1px solid rgb(206, 218, 255);
+	border-right: 0px ;
+	border-left: 0px;	*/
 }
+div.buttons{
+	display: flex ;
+	align-items: center ;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+/*	position: sticky;
+	top: 0px;*/
+}
+/*div#click_and_hold{
+	margin-top: 1px;
+	font-size: 80%;
+}
+div#click_and_hold span{
+	background: rgb(192, 218, 255) ;
+	border: 1px solid rgb(119, 175, 255);
+	box-sizing: border-box;
+	padding: 0px 3px;
+	border-radius: 0px 0px 7px 7px;
+}*/
 div.rightItems{
 	/*border: 1px solid red;*/
 }
@@ -87,16 +109,19 @@ div.tools{
 	height: 100% ;
 	align-items: center;
 	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	font-family: Montserrat ;
 }
 div.tool{
-	/*border: 1px solid #bbb;*/
-	/*box-shadow: 1px 1px 5px 2px #ddd ;*/
-	margin: 10px 15px;
+	margin: 10px 20px;
 	border-radius: 3px ;
 	overflow: hidden;
 	padding: 10px 5px;
+}
+div.t_img{
+	display: flex ;
+	justify-content: center ;
 }
 div.t_img img{
 	width: 80px ;

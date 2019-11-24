@@ -16,23 +16,31 @@
 	div#gridLeft{
 		border-radius: 0px 0px 20px 20px;
 	}
-	div.skill{
-		width: 100% ;
-		grid-template-columns: 100px auto 40px ;
-		grid-gap: 5px;
-	}
-/*	div.skill_name{
-		text-align: right;
-		font-weight: bold ;
-		font-family: Consolas ;
-	}
-	div.percent_text{
-		font-family: Consolas ;
-		font-weight: bold ;
+/*	div.info{
+		position: static;
 	}*/
+
+	div.icon_texts{
+
+	}
+	div.icon_texts a{
+		display: block;
+	}
+	div.it_text, div.it_text span{
+		display: none;
+	}
+	div.it_icon{
+		text-align: center;
+	}
+	div.tools{
+		justify-content: space-between;
+	}
+	div.tool{
+		margin: 10px;
+	}
+	div.t_img img{
+		width: 60px;
+	}
 }
 
-/**{
-	border: 1px solid red ;
-}*/
 
