@@ -1,5 +1,7 @@
-div#popup_cont{
-	background: rgba(0,0,0,0.41) ;
+div.popup_cont{
+	background: rgba(0,0,0,0.75) ;
+	/*border-color: rgba(0,0,0,0.82) ;*/
+	/*border-style: solid ;*/
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -8,9 +10,8 @@ div#popup_cont{
 	margin:0px;
 	box-sizing: border-box;
 	z-index: 2;
-	display: flex;
-	/* To hide at page load*/
-	display: none;
+	display: none ;
+	animation-fill-mode: both;
 	align-items: center;
 	justify-content: center;
 }
@@ -20,13 +21,16 @@ div#popup{
 	/*height: 200px ;*/
 	background: #f1f1f1;
 	margin: auto;
-	/*overflow: hidden;*/
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 1px 1px 5px #1f1e1ea6;
 	word-break: break-all;
+	/*transition: 1s ;*/
 }
 div.p_title{
 	background: white;
 	display: grid;
-	grid-template-columns: auto 30px ;
+	grid-template-columns: auto 35px ;
 	padding: 10px 0px ;
 }
 div.p_title_text{
@@ -59,7 +63,7 @@ div.action_buttons{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	margin: 5px 0px;
+	margin: 20px 0px 10px 0px;
 	box-sizing: border-box;
 }
 div.action_buttons div{

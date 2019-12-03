@@ -1,7 +1,7 @@
 var toast = {
 	el: "div#toast" ,
 	text: "Sample Toast",
-	interval: 2000,
+	interval: 3000,
 	domNode: {
 		root: null,
 		text: null
@@ -11,7 +11,7 @@ var toast = {
 	},
 	show: function(options = {
 				text: "Sample Toast",
-				interval: 2000
+				interval: 3000
 			}){
 		this.text = options.text || this.text ;
 		this.interval = options.interval || this.interval ;
@@ -19,7 +19,7 @@ var toast = {
 		this.domNode.root.style.display = 'flex' ;
 		var toastRef = this ;
 		setTimeout(function(){
-			toastRef.domNode.root.style.display = 'none' ;
+			toastRef.close() ;
 		}, this.interval)
 	},
 	init: function(){

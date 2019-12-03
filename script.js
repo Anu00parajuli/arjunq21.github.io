@@ -3,13 +3,12 @@ window.addEventListener("load", function(){
 	callButton = document.querySelector("#callButton") ;
 	mailButton = document.querySelector("#mailButton") ;
 	var popupButtons = [
-		{node: callButton, title: "Phone No.", actionButton: "Call Now", name: 'phone'},
-		{node: mailButton, title: "Email", actionButton: "Email Now", name: 'email'},
+		{node: callButton, title: "Phone Number", actionButton: "Call Now" },
+		{node: mailButton, title: "Email", actionButton: "Email Now" },
 	];
 	popupButtons.forEach(function(button){
 		button.node.addEventListener("click", function(e){
 			var largeText = button.node.querySelector("div.it_text span").textContent.trim() ;
-			// var href = button.node.href ;
 			popup.show({
 				title: button.title,
 				body: 	`

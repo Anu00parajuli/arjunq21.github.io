@@ -1,5 +1,6 @@
 var popup = {
-	el: "div#popup_cont" ,
+	duration: 500 ,
+	el: "div.popup_cont" ,
 	title: "Popup Title",
 	body: "Popup Body",
 	domNode: {
@@ -9,17 +10,36 @@ var popup = {
 		closeButton: null
 	},
 	close: function(){
-		this.domNode.root.style.display = "none" ;
+		var thisRef = this ;
+		thisRef.domNode.root.style.display = "none" ;
+		// this.domNode.root.classList.remove("show") ;
+		// this.domNode.root.style.animationDuration = this.duration + "ms" ;		
+		// this.domNode.root.classList.add("hide") ;
+		// setTimeout(function(){
+		// 	thisRef.domNode.root.style.display = "none" ;
+		// },thisRef.duration) ;
+		// this.domNode.root.style.animationDirection = "reverse" ;
 	},
 	show: function(options = {
 				title: "Popup Title",
 				body: "Popup Body"
 			}){
+		var thisRef = this ;
 		this.title = options.title || this.title ;
 		this.body = options.body || this.body ;
 		this.domNode.title.textContent = this.title ;
 		this.domNode.body.innerHTML = this.body ;
-		this.domNode.root.style.display = 'flex' ;
+		thisRef.domNode.root.style.display = "flex" ;
+		// this.domNode.root.classList.remove("hide") ;
+		// this.domNode.root.style.animationDuration = this.duration + "ms" ;		
+		// this.domNode.root.classList.add("show") ;
+		// setTimeout(function(){
+		// 	thisRef.domNode.root.style.display = "flex" ;
+		// }, thisRef.duration) ;
+		// this.domNode.root.style.display = 'flex' ;
+		// this.domNode.root.style.animationName = "test" ;
+		// this.domNode.root.style.animationDirection = "normal" ;
+		// this.domNode.root.style.opacity = 1 ;
 	},
 	init: function(){
 		this.domNode.root = document.querySelector(this.el) ;

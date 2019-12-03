@@ -10,7 +10,8 @@
   <link rel="stylesheet" type="text/css" href="popup.css">
   <link rel="stylesheet" type="text/css" href="toast.css">
   <link rel="stylesheet" type="text/css" href="media.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="anim.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script type="text/javascript" src='popup.js'></script>
   <script type="text/javascript" src='toast.js'></script>
@@ -36,6 +37,7 @@
       'color'=>'#4368B1', 
       'href'=>'https://www.facebook.com/arjunq21',
       'newWindow'=>1,
+      'title'=>'Facebook Profile'
     ],
     [ 'text'=> 'arjunadhikari789@gmail.com', 
       'icon'=>'fa fa-envelope-open-o', 
@@ -43,12 +45,14 @@
       'href'=>'mailto:arjunadhikari789@gmail.com',
       'id' => 'mailButton',
       'newWindow'=>1,
+      'title'=>'Email Address, Click to see'
     ],
     [ 'text'=> 'github.com/arjunQ21', 
       'icon'=>'fa fa-github', 
       'color'=>'#000', 
       'href'=>'https://github.com/arjunq21',
       'newWindow'=>1,
+      'title'=>'Github Profile'
     ],
     [ 'text'=> '977 9866008814', 
       'icon'=>'fa fa-phone', 
@@ -56,14 +60,16 @@
       'href'=>'tel:009779866008814',
       'id'=>'callButton',
       'newWindow'=>0,
+      'title'=>"Phone Number, click to see"
     ],
   ];
 ?>        
                 <?php foreach($contacts as $contact){ ?>
                   <div class="icon_texts">
-                    <a href="<?= $contact['href'] ?>"  
+                    <a href="<?= $contact['href'] ?> "  
                         <?php if(isset($contact['id'])) echo " id = '".$contact['id']."' " ?>
                         <?php if($contact['newWindow'] == 1) echo " target = '_blank' " ?>
+                        title = "<?= $contact['title']  ?>" 
                         >
                       <div class="it_icon">
                         <i class="<?= $contact['icon'] ?>" <?php if($contact['color']) echo " style='color: ". $contact['color']. ";'" ?> ></i>
@@ -77,68 +83,25 @@
                   </div>
                 <?php } ?>                               
               </div>
-           <!--    <div id="click_and_hold">
-                <span>click and hold links</span>
-              </div> -->
           </div>
     </div>
     <div class="gridRight">
       <div class="rightItems">
-        <!-- <div class="tab_title"> -->
-          <span class="titleText">
-            I make websites with
-          </span>
-        <!-- </div> -->
-  <?php 
-  $size = "150x150" ;
-  $tools = [
-    tool("HTML 5", "images/$size/html.png"),
-    tool("CSS 3", "images/$size/css.png"),
-    tool("PHP 7", "images/$size/php.png"),
-    tool("Laravel", "images/$size/laravel.png"),
-    tool("JavaScript", "images/$size/js.png"),
-    tool("MySQL", "images/$size/mysql.png"),
-    tool("Bootstrap", "images/$size/bootstrap.png"), 
-    tool("jQuery", "images/$size/jquery.png"),
-    tool("Vue Js", "images/$size/vue.png"),
-    tool("WordPress", "images/$size/wordpress.png"),
-  ];
-  function tool($name, $image){
-    return ['name'=>$name, 'image'=>$image] ;
-  }
-  $otherTools = [
-    tool("PhotoShop", "images/$size/photoshop.png"),
-    tool("Github", "images/$size/github.png"), 
-    tool("Adobe XD", "images/$size/indesign.png"),
-  ];
-  ?>   
-        <div class="tools">
-          <?php foreach($tools as $tool){ ?>
-            <div class="tool">
-              <div class="t_img">
-                <img src="<?= $tool['image'] ?>" alt="<?= $tool['name']."'s Logo" ?>">
-              </div>
-              <div class="t_name">
-                <?= $tool['name'] ?>
-              </div>
-            </div>
-          <?php } ?>
-        </div> 
         <span class="titleText">
-          Some other tools I use
-        </span> 
-        <div class="tools">
-          <?php foreach($otherTools as $tool){ ?>
-            <div class="tool">
-              <div class="t_img">
-                <img src="<?= $tool['image'] ?>" alt="<?= $tool['name']."'s Logo" ?>">
-              </div>
-              <div class="t_name">
-                <?= $tool['name'] ?>
-              </div>
-            </div>
-          <?php } ?>
-        </div>           
+          About
+        </span>
+        <div class="normalText">
+        I am a Software Engineering student from GCES, Pokhara. I live in Pokhara, Nepal.
+        <div class="mv10"></div>
+        I have been making websites for over 3 years. I like making websites simple and professional, with attention to every little details.
+        <div class="mv10"></div>  
+        I make websites from scratch with HTML5, CSS3, PHP, MySQL and JavaScript. I can fluently use framewroks like Laravel, Wordpress, Bootstrap3/4, jQuery and VueJS.
+        <br>
+        I use GitHub for version controlling.
+        <br>
+        I use photoshop and XD too, for designing.
+        </div>
+          
       </div><!-- right items -->
     </div><!-- grid right -->
   </div>
@@ -147,11 +110,11 @@
   <span>Sample Toast</span>
 </div>
 
-<div id="popup_cont">
+<div class="popup_cont">
   <div id="popup">
     <div class="p_title">
       <div class="p_title_text">
-        <span>Popup Title  like this</span>
+        <span>Popup Title looks like this</span>
       </div>
       <div class="p_close">
         <i class="fa fa-times" aria-hidden="true"></i>

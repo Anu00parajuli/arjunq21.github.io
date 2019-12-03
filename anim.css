@@ -1,0 +1,31 @@
+@keyframes test {
+	0%{
+		display: none ;
+		opacity: 0 ;
+		top: -40px;
+	}
+	1%{
+		display: flex ;
+		opacity: 0.2;
+	}
+	99%{
+		opacity: 1;
+	}
+	100%{
+		top: 0px;
+		display: flex ;
+	}
+}
+.show{
+	animation-name: test ;
+	display: flex ;
+	/*animation-iteration-count: infinite;*/
+	/*animation-direction: reverse;*/	
+}
+.hide{
+	/*display: none ;*/
+	animation-name: test ;
+	animation-direction: reverse ;
+	/*animation-iteration-count: infinite;*/
+	/*animation-direction: reverse;*/
+}

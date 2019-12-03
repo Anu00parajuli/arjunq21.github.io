@@ -18,6 +18,7 @@ div.tab_title{
 .largeText{
 	font-size: 120%;
 	padding: 10px ;
+	box-sizing: border-box;
 	border:1px solid rgba(0,0,0,0.1);
 	background: white;
 	margin: 10px auto;
@@ -30,10 +31,10 @@ div.tab_title{
 }
 .normalText{
 	/*font-weight: bold ;*/
-	color: #333;
+	color: #555;
 	/*font-family: Tahoma ;*/
-	font-size: 110% ;
-	letter-spacing: 1px ;
+	font-size: 100% ;
+	line-height: 1.5 ;
 }
 .links{
 	font-weight: bold ;
@@ -75,9 +76,9 @@ div.icon_texts a:hover, .links:hover{
 }
 div.icon_texts a:active{
 	background: white;
-	border: 1px solid #ccc;
+/*	border: 1px solid #ccc;
 	border-right: 0px ;
-	border-left: 0px;
+	border-left: 0px;*/
 }
 div.it_text{
 	display: flex ;
