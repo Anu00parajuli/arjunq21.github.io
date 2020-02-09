@@ -7,7 +7,7 @@ var toast = {
 		text: null
 	},
 	close: function(){
-		this.domNode.root.style.display = "none" ;
+		shrink(this.domNode.root) ;
 	},
 	show: function(options = {
 				text: "Sample Toast",
@@ -16,7 +16,7 @@ var toast = {
 		this.text = options.text || this.text ;
 		this.interval = options.interval || this.interval ;
 		this.domNode.text.textContent = this.text ;
-		this.domNode.root.style.display = 'flex' ;
+		enlarge(this.domNode.root)
 		var toastRef = this ;
 		setTimeout(function(){
 			toastRef.close() ;

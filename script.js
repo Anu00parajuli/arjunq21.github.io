@@ -28,6 +28,7 @@ window.addEventListener("load", function(){
  // var elem = document.getElementById('myForm');
     // var event = new Event('click');  // (*)
     // mailButton.dispatchEvent(event);
+    // toast.show("hi, i am a toast.")
 
 
 })

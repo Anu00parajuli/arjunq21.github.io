@@ -19,4 +19,5 @@ div#toast span{
 	text-align: center; 
 	padding: 10px 15px;
 	border-radius: 20px;
+	display: block;
 }

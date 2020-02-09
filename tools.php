@@ -18,9 +18,9 @@
   $otherTools = [
     tool("PhotoShop", "images/$size/photoshop.png"),
     tool("Github", "images/$size/github.png"), 
-    tool("Adobe XD", "images/$size/indesign.png"),
+    tool("Adobe XD", "images/$size/xd.png"),
   ];
-?>      <span class="titleText">
+?>      <span class="smallTitleText">
           I make websites with
         </span>
         <div class="tools">
@@ -35,7 +35,7 @@
             </div>
           <?php } ?>
         </div> 
-        <span class="titleText">
+        <span class="smallTitleText">
           Some other tools I use
         </span> 
         <div class="tools">

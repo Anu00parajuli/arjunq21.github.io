@@ -10,9 +10,10 @@
   <link rel="stylesheet" type="text/css" href="popup.css">
   <link rel="stylesheet" type="text/css" href="toast.css">
   <link rel="stylesheet" type="text/css" href="media.css">
-  <!-- <link rel="stylesheet" type="text/css" href="anim.css"> -->
+  <link rel="stylesheet" type="text/css" href="anim.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script type="text/javascript" src='anim.js'></script>
   <script type="text/javascript" src='popup.js'></script>
   <script type="text/javascript" src='toast.js'></script>
 </head>
@@ -26,7 +27,9 @@
           <div class="info head-text">
               <h2 style='letter-spacing: 1px; padding-top: 0px;margin-top: 5px;'>Arjun Adhikari.</h2>
               <div class="profileImage">
-                <img src="profile-300x300.jpg">
+                <!-- <img src="profile-300x300.jpg"> -->
+                <!-- <img src="images/babi-d-bya.jpg" alt=""> -->
+                <img src="images/pul_ma_cropped.jpg">
               </div>
               <h4 style='letter-spacing: 1px; font-style: italic; color: #555 ; margin: 25px 0px;'>I make Websites.</h4>
               <div class="buttons">
@@ -102,6 +105,13 @@
         I use photoshop and XD too, for designing.
         </div>
           
+     <!--    <span class="titleText">
+          Projects
+        </span> -->
+
+        <?php include "tools.php"; ?>
+                
+
       </div><!-- right items -->
     </div><!-- grid right -->
   </div>

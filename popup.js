@@ -10,15 +10,7 @@ var popup = {
 		closeButton: null
 	},
 	close: function(){
-		var thisRef = this ;
-		thisRef.domNode.root.style.display = "none" ;
-		// this.domNode.root.classList.remove("show") ;
-		// this.domNode.root.style.animationDuration = this.duration + "ms" ;		
-		// this.domNode.root.classList.add("hide") ;
-		// setTimeout(function(){
-		// 	thisRef.domNode.root.style.display = "none" ;
-		// },thisRef.duration) ;
-		// this.domNode.root.style.animationDirection = "reverse" ;
+		fadeOut(this.domNode.root) ;
 	},
 	show: function(options = {
 				title: "Popup Title",
@@ -29,17 +21,7 @@ var popup = {
 		this.body = options.body || this.body ;
 		this.domNode.title.textContent = this.title ;
 		this.domNode.body.innerHTML = this.body ;
-		thisRef.domNode.root.style.display = "flex" ;
-		// this.domNode.root.classList.remove("hide") ;
-		// this.domNode.root.style.animationDuration = this.duration + "ms" ;		
-		// this.domNode.root.classList.add("show") ;
-		// setTimeout(function(){
-		// 	thisRef.domNode.root.style.display = "flex" ;
-		// }, thisRef.duration) ;
-		// this.domNode.root.style.display = 'flex' ;
-		// this.domNode.root.style.animationName = "test" ;
-		// this.domNode.root.style.animationDirection = "normal" ;
-		// this.domNode.root.style.opacity = 1 ;
+		fadeIn(this.domNode.root, 600) ;
 	},
 	init: function(){
 		this.domNode.root = document.querySelector(this.el) ;

@@ -1,11 +1,24 @@
 .titleText{
-	font-size: 20px;
+	font-size: 25px;
 	font-family:Montserrat, Ubuntu, 'Source Sans Pro' ;
 	font-weight: bold ;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	color: #555 ;
 	padding: 18px;	
 	display: block;
+	text-transform: uppercase;
+	margin: 10px 0px;
+	font-style: italic;
+}
+.smallTitleText{
+	font-size: 20px;
+	font-family:Montserrat, Ubuntu, 'Source Sans Pro' ;
+	font-weight: bold ;
+	letter-spacing: 2px;
+	color: #555 ;
+	padding: 18px;	
+	display: block;
+	margin: 10px 0px;
 }
 div.tab_title{
 	/*padding: 12px;*/
